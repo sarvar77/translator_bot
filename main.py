@@ -1,8 +1,9 @@
 import telebot
 from telebot import types
 from translate import Translator
+from config import TOKEN
 
-bot = telebot.TeleBot("5064433165:AAGdFXZHwtKHDIybG7N6X66q4M5zN__JzvE")
+bot = telebot.TeleBot(TOKEN)
 
 
 @bot.message_handler(commands=["start"])
